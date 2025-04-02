@@ -1,4 +1,1 @@
-export const strContains =(title, searchString) => {
-    console.log(title, searchString, title.toLowerCase().includes(searchString.toLowerCase()));
-    title.toLowerCase().includes(searchString.toLowerCase())
-}
+export const strContains =(title, searchString) => title.toLowerCase().includes(searchString.toLowerCase())
