@@ -1,0 +1,29 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-navbar;
+  height: 100px;
+
+  > .links{
+    display: flex;
+    align-items: center;
+    > a {
+      font-size: 24px;
+      color: $color-light;
+      text-decoration: none;
+      padding: 0 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.icon {
+  display: flex;
+  font-size: 64px;
+  padding-left: 20px;
+  align-items: center;
+}
