@@ -10,12 +10,17 @@
   > .links{
     display: flex;
     align-items: center;
-    > a {
+    list-style: none;
+    > li {
       font-size: 24px;
-      color: $color-light;
       text-decoration: none;
       padding: 0 15px;
       font-weight: bold;
+
+      > a{
+        text-decoration: none;
+        color: $color-light;
+      }
     }
   }
 }
@@ -26,4 +31,8 @@
   font-size: 64px;
   padding-left: 20px;
   align-items: center;
+}
+
+.linkActive {
+  color: $color-warning !important;
 }
