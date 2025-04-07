@@ -10,4 +10,21 @@
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  > span{
+    color: $color-dark;
+  }
+}
+
+.favoriteButton {
+  background: none;
+  border: none;
+  color: gold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  background-color: $color-light !important;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
