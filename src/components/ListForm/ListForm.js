@@ -2,8 +2,8 @@ import styles from "./ListForm.module.scss";
 import TextInput from "../TextInput/TextInput";
 import Button from "../Button/Button";
 import {useDispatch} from "react-redux";
-import {AddList} from "../../redux/store";
 import {useState} from "react";
+import {addList} from "../../redux/listsReducer";
 
 
 const ListForm = props => {
@@ -12,7 +12,7 @@ const ListForm = props => {
     const dispatch = useDispatch();
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(AddList({title, description}));
+        dispatch(addList({title, description}));
         setTitle('');
         setDescription('');
     }
